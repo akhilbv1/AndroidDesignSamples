@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:gravity="center"
+                  android:layout_height="match_parent">
+
+        <!--  <TextView
+                  android:id="@+id/tvText"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                  android:textColor="@color/red_color"/>-->
+        <TextView
+                android:id="@+id/headerFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Feed"
+                android:textColor="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFeed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+        />
+
+        <TextView
+                android:id="@+id/headerEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Events"
+                android:textColor="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEvents"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+        />
+        <TextView
+                android:id="@+id/headerNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="News"
+                android:textColor="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNews"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+        />
+        <TextView
+                android:id="@+id/headerOpp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Opportunities"
+                android:textColor="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOpp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

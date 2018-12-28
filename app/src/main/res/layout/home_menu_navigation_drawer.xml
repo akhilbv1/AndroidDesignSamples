@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark"
+              android:background="@color/white"
+              tools:ignore="MissingPrefix">
+
+    <ImageView
+            android:id="@+id/ivUserProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="ContentDescription"/>
+
+
+    <ListView
+            android:id="@+id/lvSideMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:divider="@color/transparent"
+            android:scrollbars="vertical"
+            android:choiceMode="singleChoice"
+            android:background="?android:attr/activatedBackgroundIndicator"/>
+
+</LinearLayout>

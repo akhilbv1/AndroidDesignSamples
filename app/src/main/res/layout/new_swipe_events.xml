@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+              tools:ignore="MissingPrefix">
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvFeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:background="@color/white"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            tools:ignore="UnusedAttribute">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/ivEventImageUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="visible"/>
+
+            <TextView
+                    android:id="@+id/tvEventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TestEvent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/tvEventDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TestEvent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_color"/>
+            <View
+                    android:id="@+id/FeedSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.05dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:visibility="visible"
+                    android:background="@color/lightgray02"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
